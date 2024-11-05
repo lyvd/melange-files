@@ -1,8 +1,8 @@
 package:
-  name: apple-py-music 
+  name: aioconsol 
   version: 1.0
   epoch: 0
-  description: "apple-py-music"
+  description: "aioconsol"
   copyright:
     - license: BSD-3-Clause
   dependencies:
@@ -27,9 +27,9 @@ environment:
 pipeline:
   - uses: git-checkout
     with:
-      repository: https://github.com/lyvd/apple-py-music 
+      repository: https://github.com/lyvd/aioconsol 
       tag: ${{package.version}}
-      expected-commit: a39b62077e7acdf238c75bbd31c5cd5527f4e4e5 
+      expected-commit: 51fce6a70ed8c00d4d1e4186f089fe779ff39b02 
 
   - runs: |
       python3 setup.py build 
